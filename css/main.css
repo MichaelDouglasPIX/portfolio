@@ -65,7 +65,7 @@ body, html{
 .middle-content-title{
     font-size: 1.4em;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
 }
 .middle-content p{
     font-size: 1.5;
@@ -105,7 +105,7 @@ body, html{
 .footer-menushare a:hover{
     color: #00008B; 
     font-size: 2.5em;
-    text-shadow: 0 0 0.2em #9370DB, 0 0 0.2em #9370DB,0 0 0.2em #9370DB;
+    text-shadow: 0 0 0.2em #9370DB, 0 0 0.2em #9370DB;
 }
 
 footer{
@@ -119,4 +119,46 @@ footer{
 }
 footer p{
     padding-bottom: 1em;
+}
+
+@keyframes down{
+    from{
+        transform: translateY(40px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes downArte{
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.animate-down{
+    animation-name: down;
+    animation-duration: .5s;
+    animation-fill-mode: backwards;
+}
+
+.animate-downArte{
+    animation-name: downArte;
+    animation-duration: .5s;
+    animation-fill-mode: backwards;
+}
+
+.footer-menushare{
+    animation-delay: 50ms;
+}
+
+.middle-content-title{
+    animation-delay: 100ms;
+}
+
+.top-content-arte{
+    animation-delay: 100ms;
 }
