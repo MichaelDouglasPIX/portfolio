@@ -9,12 +9,12 @@
     border-radius: 50%;
     width: 3em;
     height: 3em;
-    position: fixed;
     top: .3em;
     right: .3em;
     cursor: pointer;
     box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
     transition: box-shadow .5s cubic-bezier(0.36, 0.89, 0.29, 1);
+    margin-right: 1em;
 }
 .menu:hover{
     box-shadow: 0 0 0 .2em #fff, 0 0 0 .2em #fff;
@@ -54,11 +54,15 @@ input{
 }
 
 input:checked ~ nav ul {
+    width:auto;
+    height:auto;
     opacity: 1;
 }
 
 input:checked ~ nav ul li a{
     visibility:visible;
+    width: 100%;
+    height: 100%;
 }
 
 input:checked ~ label .menu {
@@ -82,16 +86,17 @@ input:checked ~ label .hamburguer:after {
 
 .top-nav{
     text-align: center;
+    display: grid;
 }
 .top-nav ul{
     list-style: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
+    grid-template-columns: repeat(repeat(1, 1fr));
+    align-items: center;
+    font-size: 0.7em;
     opacity: 0;
     transition: .25s .1s cubic-bezier(0, 1.07, 0, 2);
+    width: 0;
+    height: 0;
 }
 .top-nav a{
     display: block;
@@ -102,4 +107,6 @@ input:checked ~ label .hamburguer:after {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     visibility:hidden;
+    width: 0;
+    height: 0;
 }

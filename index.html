@@ -10,17 +10,25 @@
         <link href="css/menu.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
-        <header class="top-header">
-            <h1>MICHAEL DOUGLAS</h1>
-            <input id="menu-hamburguer" type="checkbox">
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
-            <nav class="top-nav ">
+    <body class="no-js">
+        
+        <header class="header">
+            <div class="header_flex">
+                <a href="index.html" class="logo-text"><h1>MICHAEL DOUGLAS</h1></a>
+            
+                <input id="menu-hamburguer" type="checkbox">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+            </div>
+            
+            
+            <nav class="top-nav">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -29,22 +37,58 @@
                 </ul>
             </nav>
         </header>
-        <main class="top-content">
-            <div class="top-content-imagem">
-            </div>     
-            <div class="top-content-arte animate-downArte"></div> 
-            <div class="top-content-descricao">
-                <h2 class="middle-content-title animate-down">Full Stack | Game Dev</h2>
-                <ul class="footer-menushare animate-down">
+        
+        <section class="badge">
+            <h2 class="badge_title">Full Stack | Game Dev</h2>
+            
+            <ul class="badge_links">
                 <li><a href="https://www.linkedin.com/in/michael-douglas-749487164/" class="icon-linkedin" target="_blank"><span class="hidden">Linkedin</span></a></li>
                 <li><a href="https://github.com/MichaelDouglasPIX" class="icon-github" target="_blank"><span class="hidden">Github</span></a></li>
                 <li><a href="https://www.instagram.com/michaeldouglaspix/" class="icon-instagram" target="_blank"><span class="hidden">Instagram</span></a></li>
                 <li><a href="https://twitter.com/SrTerno_PIX" class="icon-twitter" target="_blank"><span class="hidden" >Twitter</span></a></li>           
             </ul>
-            </div>
-        </main>
-        <footer class="footer">
+        </section>
+        
+        <section class="container">
+            <article class="projects-cards">               
+
+                <img src="Imagens/Highscore.jpg" alt="Carousel Img" class="projects-cards__image">
             
+                <div class="projects-cards__logo">
+                    
+                </div>         
+            </article>
+            
+            <article class="projects-cards">               
+
+                <img src="Imagens/espirro.PNG" alt="Carousel Img" class="projects-cards__image">
+            
+                <div class="projects-cards__logo">
+                    
+                </div>         
+            </article>
+            
+            <article class="projects-cards">               
+
+                <img src="Imagens/NaoLd+.png" alt="Carousel Img" class="projects-cards__image">
+            
+                <div class="projects-cards__logo">
+                    
+                </div>         
+            </article>
+            
+            <article class="projects-cards">               
+
+                <img src="Imagens/Relivium.jpg" alt="Carousel Img" class="projects-cards__image">
+            
+                <div class="projects-cards__logo">
+                    
+                </div>         
+            </article>
+        
+        </section>
+        
+        <footer class="footer">
             <p>Desenvolvido por Michael Douglas</p>
         </footer>
     </body>

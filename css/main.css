@@ -1,84 +1,8 @@
-*{
-    margin: 0 ;
-    padding: 0 ;
-    border: 0;
-}
-body, html{
-    height: 100vh;
-    background: black;   
-}
- 
-.top-header{
-    height: 5%;
-    color: white;
-}
-.top-header h1{
-    display: inline-block;
-    font-family: 'Press Start 2P',sans-serif;
-    font-size: 1em;
-    padding: .4em 0 0 .7em;
-    box-sizing: border-box;
-    height: 100%;
-}
-
-.top-nav{
-    text-align: center;
-}
-.top-nav ul{
-    list-style: none;
-}
-.top-nav a{
-    text-decoration: none;
-    padding: 1em;
-    display: block;
-}
-.top-content{
-    text-align: center;
-    background: linear-gradient(185deg, black 10%, DarkBlue 50%, DarkSlateBlue 70%);
-    height: 85%;
-    display: block;
-    box-sizing: border-box;
-
-}
-.top-content-imagem{
-    text-align: center;
-    height: 30%;
-}
-.top-content-arte{
-    margin: auto;
-    background-image: url(../Imagens/Front.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 120% 65%;
-    background-position: bottom;
-    height: 50%;
-    box-sizing: border-box;
-}
-.top-content-descricao{
-    display: grid;
-    background: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1em;
-    color: DarkSlateBlue;
-    height: 25%;
-}
-.middle-content-title{
-    font-size: 1.4em;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.middle-content p{
-    font-size: 1.5;
-    text-transform: uppercase;
-}
-
-.top-content-descricao ul{
-    font-size: 1.2em;
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
-    grid-auto-rows: 3em;
-    align-items: center;
+body{
+    margin 0;
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.4;
+    padding: 0;
 }
 
 .hidden{
@@ -89,76 +13,100 @@ body, html{
     display: block;
 }
 
-.footer-menushare li{
-    display: inline-block;
-    padding: 0.5em 0.5em;
-    box-sizing: border-box;     
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-.footer-menushare a{
-    font-size: 2em;
+.header{
+    background: black;
+    width: 100%;
+    
+}
+.header_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 1em;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: .6em;
+}
+
+.badge{
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(../img/01.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.badge_title{
+    background-color: #63c6ae;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px 10px;
+}
+
+.badge_links{
+    padding: 30px 0 20px;
+    display: grid;
+    grid-template-rows: repeat(auto-filt, 1fr);
+    grid-auto-rows: 4em;
+    grid-auto-columns: 4.5em;
+    grid-auto-flow: column;
+}
+
+.badge_links li{
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    box-sizing: border-box;
+}
+
+.badge_links a{
+    font-size: 2.5em;
     text-decoration: none;
     color: gray;   
     transition: 0.1s ease-in-out;
 }
 
-.footer-menushare a:hover{
+.badge_links a:hover{
     color: #00008B; 
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 0 0 0.2em #9370DB, 0 0 0.2em #9370DB;
 }
 
-footer{
-    background: white;
+.projects-cards{
+    margin-top: 2.5em;
+}
+
+.projects-cards__image{
+    width: 100%;
+}
+
+.projects-cards:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+
+.footer{
     text-align: center;
-    height: 10%;
-    display: grid;
-    grid-template-columns: repeat(repeat(1, 1fr));
-    align-items: end;
-    font-size: 0.7em;
-}
-footer p{
-    padding-bottom: 1em;
-}
-
-@keyframes down{
-    from{
-        transform: translateY(40px);
-    }
-    to{
-        transform: translateY(0);
-    }
-}
-
-@keyframes downArte{
-    from{
-        transform: translateY(5px);
-    }
-    to{
-        transform: translateY(0);
-    }
-}
-
-.animate-down{
-    animation-name: down;
-    animation-duration: .5s;
-    animation-fill-mode: backwards;
-}
-
-.animate-downArte{
-    animation-name: downArte;
-    animation-duration: .5s;
-    animation-fill-mode: backwards;
-}
-
-.footer-menushare{
-    animation-delay: 50ms;
-}
-
-.middle-content-title{
-    animation-delay: 100ms;
-}
-
-.top-content-arte{
-    animation-delay: 100ms;
+    background-color: #242a2c;
+    padding: 2em 0 3em;
+    color: #454251;
+    font-size: 14px;
 }
