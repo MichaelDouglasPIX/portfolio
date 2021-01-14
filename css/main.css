@@ -91,16 +91,26 @@ body{
 }
 
 .projects-cards{
-    margin-top: 2.5em;
+    margin-top: 2.5em; 
 }
 
 .projects-cards__image{
     width: 100%;
+    border-radius: 40px;
+    display: block;
 }
 
-.projects-cards:hover{
-    outline: 5px solid #63c6ae;
-    outline-offset: -5px;
+.projects-cards__image:hover{
+    filter: grayscale(1);
+}
+
+.projects-cards a{
+    display: block;
+}
+
+.projects-cards a:hover{
+    box-shadow: 0 0 1em #9370DB, 0 0 1em #9370DB;
+    border-radius: 40px;
 }
 
 .footer{
