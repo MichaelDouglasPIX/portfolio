@@ -94,23 +94,108 @@ body{
     margin-top: 2.5em; 
 }
 
+.projects-cards:nth-child(4){
+    margin-bottom: 2.5em;
+}
+
 .projects-cards__image{
     width: 100%;
     border-radius: 40px;
     display: block;
+    transition: .3s ease-in-out;
 }
 
-.projects-cards__image:hover{
+.projects-cards a:hover .projects-cards__image{
     filter: grayscale(1);
 }
 
 .projects-cards a{
     display: block;
+    border-radius: 40px;
+    transition: .3s ease-in-out;
+    position: relative;
 }
 
-.projects-cards a:hover{
-    box-shadow: 0 0 1em #9370DB, 0 0 1em #9370DB;
-    border-radius: 40px;
+/*------------------------ Thumbs --------------------*/
+.projects-cards:nth-child(1) a:hover{
+    box-shadow: 0 0 1em #FF0000, 0 0 1em #FF0000;
+}
+.projects-cards:nth-child(2) a:hover{
+    box-shadow: 0 0 1em #4B0082, 0 0 1em #4B0082;
+}
+.projects-cards:nth-child(3) a:hover{
+    box-shadow: 0 0 1em #FFD700, 0 0 1em #FFD700;
+}
+.projects-cards:nth-child(4) a:hover{
+    box-shadow: 0 0 1em #0B0B3B, 0 0 1em #0B0B3B;
+}
+
+.projects-cards .desce_mais_uma:after{
+    content:'';
+    background-image: url(../Imagens/descemaisuma.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    transition: .4s ease-in-out;;
+}
+
+.projects-cards .vizinha_viral:after{
+    content:'';
+    background-image: url(../Imagens/vizinhaviral.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    transition: .4s ease-in-out;;
+}
+
+.projects-cards .downtown_run_down:after{
+    content:'';
+    background-image: url(../Imagens/DowntownRun-Down.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    transition: .4s ease-in-out;;
+}
+
+.projects-cards .relivium:after{
+    content:'';
+    background-image: url(../Imagens/Relivium.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    transition: .4s ease-in-out;;
+}
+
+.projects-cards .relivium:hover:after, .projects-cards .desce_mais_uma:hover:after, .projects-cards .vizinha_viral:hover:after, .projects-cards .downtown_run_down:hover:after{
+    opacity: 1;
 }
 
 .footer{
