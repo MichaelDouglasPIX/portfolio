@@ -7,8 +7,8 @@
 .menu{
     background: black;
     border-radius: 50%;
-    width: 3em;
-    height: 3em;
+    width: 2.3em;
+    height: 2.3em;
     top: .3em;
     right: .3em;
     cursor: pointer;
@@ -24,10 +24,10 @@
     position: relative;
     display: block;
     background: white;
-    width: 1.7em;
-    height: 0.2em;
-    top: 1.4em;
-    left: .6em;
+    width: 1.5em;
+    height: 0.15em;
+    top: 1.1em;
+    left: .4em;
     transition: .5s ease-in-out;
 }
 
@@ -53,21 +53,25 @@ input{
     display: none;
 }
 
-input:checked ~ nav ul {
-    width:auto;
-    height:auto;
+input:checked ~ .top-nav ul{
+    width: 100vw;
+    height: 100vh;
     opacity: 1;
+    position: fixed; top: 80px; left: 0;
+    z-index: 6;
 }
 
-input:checked ~ nav ul li a{
+input:checked ~ .top-nav a{
     visibility:visible;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 60px;  
 }
 
 input:checked ~ label .menu {
     box-shadow: 0 0 0 100vw DarkSlateBlue , 0 0 0 130vh DarkSlateBlue;
     background: DarkSlateBlue;
+    position: fixed;
+    z-index: 5;
 }
 
 input:checked ~ label .hamburguer {
@@ -87,6 +91,8 @@ input:checked ~ label .hamburguer:after {
 .top-nav{
     text-align: center;
     display: grid;
+    align-self: flex-end;
+    flex-grow: 1;
 }
 .top-nav ul{
     list-style: none;
@@ -94,7 +100,7 @@ input:checked ~ label .hamburguer:after {
     align-items: center;
     font-size: 0.7em;
     opacity: 0;
-    transition: .25s .1s cubic-bezier(0, 1.07, 0, 2);
+    transition: .25s .1s ease/*cubic-bezier(0, 1.07, 0, 2)*/;
     width: 0;
     height: 0;
 }
@@ -102,11 +108,11 @@ input:checked ~ label .hamburguer:after {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 1em;
     font-size: 2.3em;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    visibility:hidden;
+    visibility: hidden;
     width: 0;
     height: 0;
+    padding: 30px 0 0 0;
 }
