@@ -143,6 +143,7 @@ body{
     border-radius: 40px;
     display: block;
     transition: .3s ease-in-out;
+    filter: grayscale(1);
 }
 
 .projects-cards a:hover .projects-cards__image{
@@ -182,8 +183,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    opacity: 0;
-    transition: .4s ease-in-out;;
+    opacity: 1;
+    transition: .4s ease-in-out;
 }
 
 .projects-cards .vizinha_viral:after{
@@ -198,8 +199,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    opacity: 0;
-    transition: .4s ease-in-out;;
+    opacity: 1;
+    transition: .4s ease-in-out;
 }
 
 .projects-cards .downtown_run_down:after{
@@ -214,7 +215,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     transition: .4s ease-in-out;;
 }
 
@@ -230,11 +231,11 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     transition: .4s ease-in-out;
 }
 
-.projects-cards .relivium:hover:after, .projects-cards .desce_mais_uma:hover:after, .projects-cards .vizinha_viral:hover:after, .projects-cards .downtown_run_down:hover:after{
+.projects-cards .relivium:hover:after, .projects-cards .desce_mais_uma:hover:after, .projects-cards .vizinha_viral:hover:after, .projects-cards .downtown_run_down:hover:after, .projects-cards .relivium:after{
     opacity: 1;
 }
 
@@ -263,6 +264,15 @@ body{
     
     .badge{
         background-size: 110% 400px, cover;
+    }
+    
+    .projects-cards__image{
+        filter: grayscale(0);
+    }
+    
+    .projects-cards .desce_mais_uma:after, .projects-cards .vizinha_viral:after, .projects-cards .downtown_run_down:after, .projects-cards .relivium:after{
+    content:'';
+    opacity: 0;
     }
 }
 
