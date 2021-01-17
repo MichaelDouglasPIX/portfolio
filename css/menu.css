@@ -11,12 +11,12 @@
 
 .header_btnMenu{
     float: right;
-    margin-right: 1em;
     padding: 0px 10px;
-    height: 4.5em;
+    height: 3.53em;
     border: none;
     cursor: pointer;
     background: transparent;
+    margin-right: 0;
 }
 
 .menu:hover{
@@ -84,13 +84,13 @@ input{
 }
 
 .logo-text{
-    height: 9em;
+    height: 7em;
     text-align: center;
     text-transform: uppercase;
     background-color: black;
     font-size: .5em;
     margin: 0;
-    padding: 0 16px;
+    padding: 0px 7px 0px 16px;
     display: flex;
     justify-content:center;
     flex-direction: column;
@@ -144,6 +144,24 @@ input{
 
 .js .header_nav{
     transition: max-height .7s ease;
+}
+
+@media screen and (min-width: 360px){
+    .logo-text{
+        padding: 0px 16px;
+    }
+    .header_btnMenu{
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 411px){
+    .logo-text{
+        height: 9em;
+    }
+    .header_btnMenu{
+        height: 4.5em;
+    }
 }
 
 @media screen and (min-width: 600px){
