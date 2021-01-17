@@ -69,10 +69,43 @@ body{
     transition: 0.1s ease-in-out;
 }
 
-.badge_links a:hover{
-    color: #00008B; 
+.badge_links a:hover{ 
     font-size: 3em;
-    text-shadow: 0 0 0.2em #9370DB, 0 0 0.2em #9370DB;
+}
+
+.badge_links .icon-linkedin{
+    color: #0e4fa8;
+}
+
+.badge_links .icon-linkedin:hover{
+    text-shadow: 0 0 0.3em rgba(135, 139, 244, 0.48), 0 0 0.3em rgba(135, 139, 244, 0.48);
+}
+
+.badge_links .icon-instagram{
+    color: #a62bb5;
+}
+
+.badge_links .icon-instagram:hover{
+    text-shadow: 0 0 0.3em rgba(244, 175, 252, 0.61), 0 0 0.3em rgba(242, 164, 252, 0.61);
+    box-sizing: 50px;   
+}
+
+.badge_links .icon-twitter{
+        color: #2a85c7;
+}
+
+.badge_links .icon-twitter:hover{
+    text-shadow: 0 0 0.2em rgba(42, 133, 199, 0.53), 0 0 0.2em rgba(42, 133, 199, 0.53);
+    box-sizing: 50px;   
+}
+
+.badge_links .icon-github{
+        color: black;
+}
+
+.badge_links .icon-github:hover{
+    text-shadow: 0 0 0.2em #8e8e8e, 0 0 0.2em #8e8e8e;
+    box-sizing: 50px;   
 }
 
 .container{
@@ -236,7 +269,7 @@ body{
 @media screen and (min-width: 1350px){
 
     .badge{
-        height: 90vh;
+        height: 88vh;
     }
     
     .badge{
@@ -265,16 +298,23 @@ body{
     color: gray;   
     transition: 0.1s ease-in-out;
     }
-
+ 
     .badge_links a:hover{
-        color: #00008B; 
-        font-size: 3.5em;
+        font-size: 4em;
+    }
+    
+    .badge_links .icon-github{
+        color: #ffffff;
     }
     
     .projects{
     background:     linear-gradient(135deg, #270a41 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
                     linear-gradient(-135deg, #270a41 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
     background-size: 40px 40px;
+    }
+    
+    .badge_links .icon-instagram:hover, .badge_links .icon-linkedin:hover, .badge_links .icon-twitter:hover, .badge_links .icon-github:hover{
+      text-shadow: 0 0 0.2em rgba(42, 133, 199, 0); 
     }
 }
 
