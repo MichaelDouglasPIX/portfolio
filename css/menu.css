@@ -5,16 +5,20 @@
 }
 /*---------- Botão Hamburguer ----------*/
 .menu{
-    float: right;
-    top: .4em;
-    right: .3em;
-    cursor: pointer;
     box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
     transition: box-shadow .5s cubic-bezier(0.36, 0.89, 0.29, 1);
-    margin-right: 1em;
-    padding: 0px 15px;
-    height: 4.3em;
 }
+
+.header_btnMenu{
+    float: right;
+    margin-right: 1em;
+    padding: 0px 10px;
+    height: 4.5em;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
 .menu:hover{
     box-shadow: 0 0 0 .2em #fff, 0 0 0 .2em #fff;
 }
@@ -25,8 +29,6 @@
     background: #242c2c;
     width: 2.3em;
     height: 0.3em;
-    top: 2em;
-    left: .4em;
     transition: .5s ease-in-out;
 }
 
@@ -52,29 +54,26 @@ input{
     display: none;
 }
 
-.menu:hover .hamburguer, .menu:hover .hamburguer:before, .menu:hover .hamburguer:after{
+.header_btnMenu:hover .hamburguer, .header_btnMenu:hover .hamburguer:before, .header_btnMenu:hover .hamburguer:after{
     background: #B18904;
 }
 
-input:checked ~ label .hamburguer {
+.menu-active .hamburguer {
+    background: #B18904;
     transform: rotate(45deg);
 } 
 
-input:checked ~ label .hamburguer:before {
+.menu-active .hamburguer:before {
+    background: #B18904;
     transform: rotate(90deg);
     top: 0;
 } 
 
-input:checked ~ label .hamburguer:after {
+.menu-active .hamburguer:after {
+    background: #B18904;
     transform: rotate(90deg);
     bottom: 0;
 } 
-
-input:checked ~ .header_nav{
-    max-height:  100vh;
-    overflow: visible;
-    transition: max-height .5s ease-in-out;
-}
 
 /*---------- Menu de opções ----------*/
 
@@ -110,13 +109,16 @@ input:checked ~ .header_nav{
 
 .header_nav{ 
     clear: left;
-    max-height: 0;
-    overflow: hidden;
 }
 
 .header_nav ul{
     margin: 0;
     padding: 0;   
+}
+
+.js .header{
+    position: fixed;
+    width: 100%;
 }
 
 .header_nav li{
@@ -133,11 +135,15 @@ input:checked ~ .header_nav{
     font-weight: bold; 
     display: block;
     padding: 25px 0;
-    transition: .5s ease;
+    transition:color .5s ease;
 }
 
 .header_nav a:hover{
     color: #B18904; 
+}
+
+.js .header_nav{
+    transition: max-height .7s ease;
 }
 
 @media screen and (min-width: 600px){
@@ -157,7 +163,7 @@ input:checked ~ .header_nav{
         font-size: .58em;
     }
     
-    .menu{
+    .header_btnMenu{
         display: none;
     }
     
