@@ -5,16 +5,15 @@
 }
 /*---------- Botão Hamburguer ----------*/
 .menu{
-    background: black;
-    border-radius: 50%;
-    width: 2.3em;
-    height: 2.3em;
-    top: .3em;
+    float: right;
+    top: .4em;
     right: .3em;
     cursor: pointer;
     box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
     transition: box-shadow .5s cubic-bezier(0.36, 0.89, 0.29, 1);
     margin-right: 1em;
+    padding: 0px 15px;
+    height: 4.3em;
 }
 .menu:hover{
     box-shadow: 0 0 0 .2em #fff, 0 0 0 .2em #fff;
@@ -23,16 +22,16 @@
 .hamburguer {
     position: relative;
     display: block;
-    background: white;
-    width: 1.5em;
-    height: 0.15em;
-    top: 1.1em;
+    background: #242c2c;
+    width: 2.3em;
+    height: 0.3em;
+    top: 2em;
     left: .4em;
     transition: .5s ease-in-out;
 }
 
 .hamburguer:before, .hamburguer:after{
-    background: white;
+    background: #242c2c;
     content:'';
     display: block;
     width: 100%;
@@ -42,21 +41,19 @@
 }
 
 .hamburguer:before{
-    top: -.6em;
+    top: -.8em;
 }
 
 .hamburguer:after{
-    bottom: -.6em;
+    bottom: -.8em;
 }
 
 input{
     display: none;
 }
 
-input:checked ~ label .menu {
-    box-shadow: 0 0 0 100vw DarkSlateBlue , 0 0 0 130vh DarkSlateBlue;
-    background: DarkSlateBlue;
-    z-index: 5;
+.menu:hover .hamburguer, .menu:hover .hamburguer:before, .menu:hover .hamburguer:after{
+    background: #B18904;
 }
 
 input:checked ~ label .hamburguer {
@@ -72,6 +69,12 @@ input:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
 } 
+
+input:checked ~ .header_nav{
+    max-height:  100vh;
+    overflow: visible;
+    transition: max-height .5s ease-in-out;
+}
 
 /*---------- Menu de opções ----------*/
 
@@ -107,6 +110,8 @@ input:checked ~ label .hamburguer:after {
 
 .header_nav{ 
     clear: left;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .header_nav ul{
@@ -160,6 +165,7 @@ input:checked ~ label .hamburguer:after {
         float: left;
         width: 60%;
         clear: none;
+        overflow: visible;
     }
     
     .header_nav ul{
