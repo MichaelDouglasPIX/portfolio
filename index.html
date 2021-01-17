@@ -16,26 +16,23 @@
     <body class="no-js">
         
         <header class="header">
-            <div class="header_flex">
                 <a href="index.html" class="logo-text"><h1>MICHAEL DOUGLAS</h1></a>
-            
+                
                 <input id="menu-hamburguer" type="checkbox">
                 <label for="menu-hamburguer">
-                    <div class="menu">
+                    <div style="display: none;" class="menu">
                         <span class="hamburguer"></span>
                     </div>
                 </label>
-                <div class="break"></div>
-                <nav class="top-nav">
+            
+                <nav class="header_nav">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Games</a></li>
                         <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
-         
-            </div>
+            
         </header>
         
         <section class="badge">         
@@ -50,12 +47,13 @@
             
         </section>
         
-        <section class="container">
+        <div class="container">
             
             <div class="projects">
                 <h2>Games</h2>
             </div>
-            <article class="projects-cards">               
+            <section class="game-cards">
+                <article class="projects-cards">               
                 <a href="#" class="desce_mais_uma">
                     <img src="Imagens/ThumbDesceMaisUma.png" alt="Carousel Img" class="projects-cards__image">
                 </a>
@@ -78,8 +76,8 @@
                     <img src="Imagens/ThumbRelivium.PNG" alt="Carousel Img" class="projects-cards__image">
                 </a>             
             </article>
-        
-        </section>
+            </section>
+        </div>
         
         <footer class="footer">
             <p>Desenvolvido por Michael Douglas</p>

@@ -19,35 +19,7 @@ body{
     margin-left: auto;
     padding-left: 1em;
     padding-right: 1em;
-}
-
-.header{
-    background: black;
-    width: 100%;
-    
-}
-.header_flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-.logo-text{
-    text-transform: uppercase;
-    margin: 0;
-    padding-left: 1em;
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    font-size: .6em;
-    flex-grow: 3;
+    max-width: 1500px;
 }
 
 .badge{
@@ -67,7 +39,8 @@ body{
 
 .badge_title{
     background-color: #380B61;
-    color: white;
+    color: #fff;
+    text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
     padding: 20px 10px;
@@ -121,13 +94,14 @@ body{
 }
 .projects h2{
     padding: 15px 70px 15px 70px;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 .projects-cards{
     margin-top: 2.5em; 
 }
 
-.projects-cards:nth-child(5){
+.projects-cards:nth-child(4){
     margin-bottom: 2.5em;
 }
 
@@ -150,16 +124,16 @@ body{
 }
 
 /*------------------------ Thumbs --------------------*/
-.projects-cards:nth-child(2) a:hover{
+.projects-cards:nth-child(1) a:hover{
     box-shadow: 0 0 1em #FF0000, 0 0 1em #FF0000;
 }
-.projects-cards:nth-child(3) a:hover{
+.projects-cards:nth-child(2) a:hover{
     box-shadow: 0 0 1em #4B0082, 0 0 1em #4B0082;
 }
-.projects-cards:nth-child(4) a:hover{
+.projects-cards:nth-child(3) a:hover{
     box-shadow: 0 0 1em #FFD700, 0 0 1em #FFD700;
 }
-.projects-cards:nth-child(5) a:hover{
+.projects-cards:nth-child(4) a:hover{
     box-shadow: 0 0 1em #0B0B3B, 0 0 1em #0B0B3B;
 }
 
@@ -224,7 +198,7 @@ body{
     transform: translate(-50%, -50%);
     position: absolute;
     opacity: 0;
-    transition: .4s ease-in-out;;
+    transition: .4s ease-in-out;
 }
 
 .projects-cards .relivium:hover:after, .projects-cards .desce_mais_uma:hover:after, .projects-cards .vizinha_viral:hover:after, .projects-cards .downtown_run_down:hover:after{
@@ -237,4 +211,86 @@ body{
     padding: 2em 0 3em;
     color: #454251;
     font-size: 14px;
+}
+
+@media screen and (min-width: 800px){
+    .game-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .projects-cards:nth-child(3){
+    margin-bottom: 2.5em;
+    }
+    
+    .projects h2{
+    font-size: 3em;
+    }
+    
+    .badge{
+        background-size: 110% 400px, cover;
+    }
+}
+
+@media screen and (min-width: 1350px){
+
+    .badge{
+        height: 90vh;
+    }
+    
+    .badge{
+    justify-content: center;
+    align-items:flex-start;
+    background-image:   
+                        linear-gradient(90deg , black 5%, #380B61 74%);
+    background-size: 100% 100%, cover;
+    }
+    
+    .badge_title{
+    background-color: rgba(255,255,255,0);
+    font-size: 3em;
+    margin: 20px 0 0 20px; 
+    padding: 20px 20px;
+    }
+
+    .badge_links{
+        padding: 20px 0px 20px 80px;
+        grid-auto-rows: 4em;
+        grid-auto-columns: 7.5em;
+    }
+    
+    .badge_links a{
+    font-size: 3em;
+    color: gray;   
+    transition: 0.1s ease-in-out;
+    }
+
+    .badge_links a:hover{
+        color: #00008B; 
+        font-size: 3.5em;
+    }
+    
+    .projects{
+    background:     linear-gradient(135deg, #270a41 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
+                    linear-gradient(-135deg, #270a41 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
+    background-size: 40px 40px;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .game-cards{
+        grid-gap: 5%;
+    }
+    .container{
+    max-width: 1800px;
+    }
+    
+    .projects-cards:nth-child(3), .projects-cards:nth-child(4){
+    margin-bottom: 10em;
+    }
+    
+    .projects h2{
+    font-size: 4em;
+    }
 }
