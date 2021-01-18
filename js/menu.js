@@ -27,7 +27,9 @@ function Menu(config){
     }
     
     this.btn.addEventListener('click', openOrClose);
-    this.gameBtn.addEventListener('click', openOrClose);
+    
+    this.gameBtn.addEventListener('click', openOrCloseMenu);
+    
     function openOrClose(){
         if(!_opened){
             openMenu();
@@ -61,4 +63,11 @@ function Menu(config){
         applyStyleToNav(_style)
         _opened = false;
     }
+    
+    function openOrCloseMenu(){
+        if(window.innerWidth <= _this.maxWidth){
+           closeMenu();
+        }
+    }
+
 }
