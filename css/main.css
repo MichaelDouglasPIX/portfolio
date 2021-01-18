@@ -342,10 +342,10 @@ body{
 
 @media screen and (min-width: 1800px){
     .game-cards{
-        grid-gap: 5%;
+        grid-gap: 10%;
     }
     .container{
-    max-width: 1800px;
+    max-width: 1600px;
     }
     
     .projects-cards:nth-child(3), .projects-cards:nth-child(4){
