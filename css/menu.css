@@ -26,14 +26,14 @@
 .hamburguer {
     position: relative;
     display: block;
-    background: #242c2c;
+    background: #fff;
     width: 2.3em;
     height: 0.3em;
     transition: .5s ease-in-out;
 }
 
 .hamburguer:before, .hamburguer:after{
-    background: #242c2c;
+    background: #fff;
     content:'';
     display: block;
     width: 100%;
@@ -78,7 +78,6 @@ input{
 /*---------- Menu de opções ----------*/
 
 .header{
-    background: #fff;
     width: 100%;
     z-index: 1;
 }
@@ -132,7 +131,7 @@ input{
 
 .header_nav a{
     text-decoration: none;
-    color: #242c2c;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold; 
     display: block;
@@ -153,7 +152,7 @@ input{
         padding: 0px 16px;
     }
     .header_btnMenu{
-        margin-right: 16px;
+        margin-right: 15px;
     }
 }
 
@@ -165,7 +164,7 @@ input{
         height: 4.5em;
     }
     .js .header{
-        height: 4.5em;
+        height: 0em;
     }
 }
 
@@ -185,7 +184,7 @@ input{
         width: 40%;
         font-size: .58em;
     }
-    
+     
     .header_btnMenu{
         display: none;
     }
@@ -209,6 +208,7 @@ input{
     .header_nav a{
         background: #fff;
         font-size: 1.5em;
+        color: #242c2c;
     }
 }
 
