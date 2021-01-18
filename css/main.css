@@ -250,14 +250,12 @@ body{
 @media screen and (min-width: 375px){
     .badge{
         background-size: 110% 400px, cover;
-        height: 90vh;
     }
 }
 
 @media screen and (min-width: 411px){
     .badge{
         background-size: 110% 400px, cover;
-        height: 95vh;
     }
 }
 
