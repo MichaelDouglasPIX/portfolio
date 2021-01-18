@@ -80,6 +80,7 @@ input{
 .header{
     width: 100%;
     z-index: 1;
+    background: black;
 }
 
 .logo-text{
@@ -164,7 +165,7 @@ input{
         height: 4.5em;
     }
     .js .header{
-        height: 0em;
+        height: 4.6em;
     }
 }
 
