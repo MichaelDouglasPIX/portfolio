@@ -6,6 +6,7 @@
     var menu = new Menu({
         container: '.header_nav',
         toggleBtn: '.header_btnMenu',
+        gamesBtn: '.btnGames',
         widthEnabled: 800
     })
 })();

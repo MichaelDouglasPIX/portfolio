@@ -3,6 +3,8 @@ function Menu(config){
     
     this.btn = (typeof config.container === 'string') ? document.querySelector(config.toggleBtn) : config.toggleBtn;
     
+    this.gameBtn = (typeof config.container === 'string') ? document.querySelector(config.gamesBtn) : config.gamesBtn;
+    
     this.maxWidth = config.widthEnabled || false;
     
     var _opened = false;
@@ -25,7 +27,7 @@ function Menu(config){
     }
     
     this.btn.addEventListener('click', openOrClose);
-    
+    this.gameBtn.addEventListener('click', openOrClose);
     function openOrClose(){
         if(!_opened){
             openMenu();
