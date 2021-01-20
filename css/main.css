@@ -32,7 +32,7 @@ body{
     background-image:   url(../Imagens/Front.png), 
                         url(../Imagens/LogoSite.png),
                         url(../Imagens/Background.png),
-                        linear-gradient(black 1%, #380B61 74%);
+                        linear-gradient(90deg ,#270202 1%, #1a022f 74%);
     background-size: 110% 360px, 235px 390px, 610px 400px, cover;
     background-repeat: no-repeat;
     background-position: right bottom, center, top, center;
@@ -43,7 +43,7 @@ body{
 }
 
 .badge_title{
-    background-color: #380B61;
+    background-color: #8ec45f;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -306,7 +306,7 @@ body{
     align-items:flex-start;
     background-image:   url(../Imagens/LogoSite.png),
                         url(../Imagens/Background.png),
-                        linear-gradient(90deg , black 5%, #380B61 74%);
+                        linear-gradient(to right, #000000 , #270202 40% , #1a022f);
     height: 92vh;
     background-size: 265px 450px, 850px 600px, cover;
     background-position: 880px bottom, 600px bottom, center;

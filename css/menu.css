@@ -55,22 +55,22 @@ input{
 }
 
 .header_btnMenu:hover .hamburguer, .header_btnMenu:hover .hamburguer:before, .header_btnMenu:hover .hamburguer:after{
-    background: #B18904;
+    background: #8ec45f;
 }
 
 .menu-active .hamburguer {
-    background: #B18904;
+    background: #8ec45f;
     transform: rotate(45deg);
 } 
 
 .menu-active .hamburguer:before {
-    background: #B18904;
+    background: #8ec45f;
     transform: rotate(90deg);
     top: 0;
 } 
 
 .menu-active .hamburguer:after {
-    background: #B18904;
+    background: #8ec45f;
     transform: rotate(90deg);
     bottom: 0;
 } 
@@ -103,7 +103,7 @@ input{
 }
 
 .logo-text:hover{
-    color: #B18904;
+    color: #8ec45f;
     transition: .5s ease;
 }
 
@@ -125,7 +125,7 @@ input{
 
 .header_nav li{
     list-style-type: none;
-    background: #150424;
+    background: #1a022f;
     text-align: center;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);    
 }
@@ -141,7 +141,7 @@ input{
 }
 
 .header_nav a:hover{
-    color: #B18904; 
+    color: #8ec45f; 
 }
 
 .js .header_nav{
