@@ -30,10 +30,12 @@ body{
     padding: 40px 20px 0px 20px;
     text-align: center;
     background-image:   url(../Imagens/Front.png), 
+                        url(../Imagens/LogoSite.png),
+                        url(../Imagens/Background.png),
                         linear-gradient(black 1%, #380B61 74%);
-    background-size: 110% 360px, cover;
+    background-size: 110% 360px, 235px 390px, 610px 400px, cover;
     background-repeat: no-repeat;
-    background-position: right bottom, center;
+    background-position: right bottom, center, top, center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -252,13 +254,19 @@ body{
 
 @media screen and (min-width: 375px){
     .badge{
-        background-size: 110% 400px, cover;
+        background-size: 110% 400px, 245px 400px,650px 410px, cover;
     }
 }
 
 @media screen and (min-width: 411px){
     .badge{
-        background-size: 110% 400px, cover;
+        background-size: 110% 400px, 290px 500px, 670px 450px, cover;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .badge{
+        background-size: 110% 400px, 320px 550px, 950px 650px, cover;
     }
 }
 
@@ -278,7 +286,8 @@ body{
     }
     
     .badge{
-        background-size: 110% 400px, cover;
+        background-size: 110% 400px, 265px 450px, 850px 600px, cover;
+        background-position: right bottom, center, center, center;
     }
     
     .projects-cards__image{
@@ -291,18 +300,16 @@ body{
     }
 }
 
-@media screen and (min-width: 1350px){
-
-    .badge{
-        height: 92vh;
-    }
-    
+@media screen and (min-width: 1366px){
     .badge{
     justify-content: center;
     align-items:flex-start;
-    background-image:   
+    background-image:   url(../Imagens/LogoSite.png),
+                        url(../Imagens/Background.png),
                         linear-gradient(90deg , black 5%, #380B61 74%);
-    background-size: 100% 100%, cover;
+    height: 92vh;
+    background-size: 265px 450px, 850px 600px, cover;
+    background-position: 880px bottom, 600px bottom, center;
     }
     
     .badge_title{
@@ -343,7 +350,14 @@ body{
     }
 }
 
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 1600px){
+    .badge{
+    background-size: 320px 550px, 1100px 750px, cover;    
+    background-position: 1000px bottom, 620px bottom, center;
+    }
+}
+
+@media screen and (min-width: 1920px){
     .game-cards{
         grid-gap: 10%;
     }
@@ -358,5 +372,17 @@ body{
     .projects h2{
     font-size: 4em;
     padding: 15px 70px 50px 70px;
+    }
+    
+    .badge{
+        background-size: 385px 650px, 1250px 800px, cover;
+    background-position: 1090px bottom, 670px bottom, center;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    .badge{
+    background-size: 450px 750px, 1700px 1050px, cover; 
+    background-position: 1450px bottom, 850px bottom, center;
     }
 }
