@@ -133,6 +133,7 @@ body{
 .projects h2{
     padding: 15px 70px 10px 70px;
     font-family: 'Press Start 2P', sans-serif;
+    color: #270202
 }
 
 .projects-cards{
@@ -246,7 +247,7 @@ body{
 
 .footer{
     text-align: center;
-    background-color: #242a2c;
+    background-color: #270202;
     padding: 2em 0 3em;
     color: #454251;
     font-size: 14px;
@@ -340,8 +341,8 @@ body{
     }
     
     .projects{
-    background:     linear-gradient(135deg, #270a41 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
-                    linear-gradient(-135deg, #270a41 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
+    background:     linear-gradient(135deg, #270202 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
+                    linear-gradient(-135deg, #270202 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
     background-size: 40px 40px;
     }
     
