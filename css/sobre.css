@@ -169,7 +169,7 @@ body{
 
 @media screen and (min-width: 1280px){
     .container{
-    height: 90%;
+    height: 91%;
     }
     .sobre{
     grid-template-columns: 1fr 1fr;
@@ -191,14 +191,14 @@ body{
     }
     
     .footer{
-    height: 8%;
-    padding: 0em 0 0em;
+    box-sizing: border-box;
+    height: 9.2%;
+    padding: 2em 0 0em 0;
 }
 
 .footer p{
     display: block;
     height: 100%;
-    padding-top: 2%;
     box-sizing: border-box;
     }    
 }
