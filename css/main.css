@@ -253,6 +253,101 @@ body{
     font-size: 14px;
 }
 
+/*---------- Sobre ----------*/
+
+.sobre{
+    padding: 5em 0 0 0;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.sobre-desc{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.sobre h3{
+    color: #270202;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 20px 10px;
+    font-family: 'Press Start 2P', sans-serif;
+    text-transform: uppercase;
+}
+.sobre p{
+    text-align:justify;
+    font-weight: bold;
+    color: #222;
+    padding: 0 10px 0 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.section_skills{
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+    font-size: .8em;
+    margin-bottom: 80px;
+}
+
+.section_skills .skills{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background: #8ec45f;
+    border-radius: 5px 0 0 5px;
+}
+
+.section_skills .skills .name{
+    position: relative;
+    width: 70px;
+    padding: 8px 0 0 10px;
+    text-align: left;
+    color: #fff; 
+}
+
+.section_skills .skills .value{
+    position: absolute;
+    width: 95%;
+    padding: 5px 0 0 0;
+    text-align: right;
+    color: #8ec45f;
+    text-transform: uppercase;
+}
+
+.section_skills .percent{
+    position: relative;
+    width: calc(100% - 20px);
+    height: 30px;
+    margin: 0 0 0 0;
+    background: #1a022f;
+    overflow: hidden;
+}
+
+.section_skills .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    animation: animate 1s ease-in-out forwards;
+
+}
+
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+
+/*---------- Medias ----------*/
+
 @media screen and (min-width: 375px){
     .badge{
         background-size: 110% 400px, 245px 400px,650px 410px, cover;

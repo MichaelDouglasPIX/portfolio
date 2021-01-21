@@ -7,6 +7,7 @@
         container: '.header_nav',
         toggleBtn: '.header_btnMenu',
         gamesBtn: '.btnGames',
+        sobreBtn: '.btnSobre',
         widthEnabled: 800
     })
 })();

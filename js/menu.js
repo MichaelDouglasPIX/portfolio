@@ -5,6 +5,8 @@ function Menu(config){
     
     this.gameBtn = (typeof config.container === 'string') ? document.querySelector(config.gamesBtn) : config.gamesBtn;
     
+    this.sobreBtn = (typeof config.container === 'string') ? document.querySelector(config.sobreBtn) : config.sobreBtn;
+    
     this.maxWidth = config.widthEnabled || false;
     
     var _opened = false;
@@ -29,6 +31,8 @@ function Menu(config){
     this.btn.addEventListener('click', openOrClose);
     
     this.gameBtn.addEventListener('click', openOrCloseMenu);
+    
+    this.sobreBtn.addEventListener('click', openOrCloseMenu);
     
     function openOrClose(){
         if(!_opened){
