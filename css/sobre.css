@@ -63,9 +63,15 @@ body{
     text-align:justify;
     font-weight: bold;
     color: #222;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 15px 10px;
     display: block;
     box-sizing: border-box;
+}
+
+.sobre-desc a {
+    color: #8ec45f;
+    font-weight: 800;
+    text-decoration: none;
 }
 
 .section_skills{
