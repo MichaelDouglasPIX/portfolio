@@ -20,8 +20,8 @@ body{
 .container{
     margin-right: auto;
     margin-left: auto;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .7em;
+    padding-right: .7em;
     max-width: 1500px;
 }
 
@@ -118,7 +118,7 @@ body{
 }
 .game-cards{
     overflow: hidden;
-    padding: 0 15px;
+    padding: 0 19px;
 }
 
 .projects{
