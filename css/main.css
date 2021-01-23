@@ -316,12 +316,13 @@ body{
     .badge{
     justify-content: center;
     align-items:flex-start;
-    background-image:   url(../Imagens/LogoSite.png),
+    background-image:   linear-gradient(rgba(255,255,255,0) 70% , black),
+                        url(../Imagens/LogoSite.png),
                         url(../Imagens/Background.png),
                         linear-gradient(to right, #000000 , #270202 40% , #1a022f);
     height: 92vh;
-    background-size: 265px 450px, 850px 600px, cover;
-    background-position: 880px bottom, 600px bottom, center;
+    background-size: cover, 265px 450px, 850px 600px, cover;
+    background-position: center, 880px bottom, 600px bottom, center;
     }
     
     .badge_title{
@@ -352,8 +353,8 @@ body{
     }
     
     .projects{
-    background:     linear-gradient(135deg, #270202 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
-                    linear-gradient(-135deg, #270202 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
+    background:     linear-gradient(135deg, #000000 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
+                    linear-gradient(-135deg, #000000 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
     background-size: 40px 40px;
     }
     
@@ -364,8 +365,8 @@ body{
 
 @media screen and (min-width: 1600px){
     .badge{
-    background-size: 320px 550px, 1100px 750px, cover;    
-    background-position: 1000px bottom, 620px bottom, center;
+    background-size: cover,320px 550px, 1100px 750px, cover;    
+    background-position: center, 1000px bottom, 620px bottom, center;
     }
 }
 
@@ -387,14 +388,14 @@ body{
     }
     
     .badge{
-        background-size: 385px 650px, 1250px 800px, cover;
-    background-position: 1090px bottom, 670px bottom, center;
+        background-size: cover, 385px 650px, 1250px 800px, cover;
+        background-position: center, 1090px bottom, 670px bottom, center;
     }
 }
 
 @media screen and (min-width: 2560px){
     .badge{
-    background-size: 450px 750px, 1700px 1050px, cover; 
-    background-position: 1450px bottom, 850px bottom, center;
+    background-size: cover, 450px 750px, 1700px 1050px, cover; 
+    background-position: center, 1450px bottom, 850px bottom, center;
     }
 }
