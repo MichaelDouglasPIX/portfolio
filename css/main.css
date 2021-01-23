@@ -118,6 +118,7 @@ body{
 }
 .game-cards{
     overflow: hidden;
+    padding: 0 15px;
 }
 
 .projects{
@@ -279,6 +280,11 @@ body{
 }
 
 @media screen and (min-width: 800px){
+    .game-cards{
+    overflow: visible;
+    padding: 0 0;
+    }
+    
     .game-cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
