@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body class="no-js">
         
@@ -32,9 +33,9 @@
         </header>
         
         <div class="teste">
-            <div class="container" >
+            <div class="container">
                 <section class="sobre" id="sobre">
-                <article class="sobre-desc">       
+                <article class="sobre-desc" data-aos="fade-right" data-aos-duration="1000">       
                     
                     <h3 class="sobre-desc-title">Sobre Mim</h3>
                     
@@ -52,7 +53,7 @@
                         
                 </article>
 
-                <article class="section_skills" id="skills">               
+                <article class="section_skills" id="skills" data-aos="fade-left" data-aos-duration="1000">               
        
                     <div class="skills">
                         <span class="name">C#</span>
@@ -136,5 +137,14 @@
         
         <script src="js/menu.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 0,
+                duration: 500,
+                easing: 'ease-in-out',
+                once: true
+            });
+        </script>
     </body>
 </html> 
