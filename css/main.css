@@ -116,6 +116,9 @@ body{
 .container{
     background: #E6E0F8;
 }
+.game-cards{
+    overflow: hidden;
+}
 
 .projects{
     display: flex;

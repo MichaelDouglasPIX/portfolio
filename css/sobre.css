@@ -43,6 +43,7 @@ body{
     grid-template-rows: auto;   
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 
 .sobre-desc{
@@ -188,7 +189,6 @@ body{
         align-items: center;
     }
     .container{
-       
     }
     
     .sobre{
