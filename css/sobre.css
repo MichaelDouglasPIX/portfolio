@@ -55,7 +55,7 @@ body{
     color: #8ec45f;
     font-size: 1.4em;
     font-weight: 800;
-    padding: 20px 10px;
+    padding: 20px 20px;
     font-family: 'Press Start 2P', sans-serif;
     text-transform: uppercase;
 }
@@ -129,6 +129,11 @@ body{
 
 }
 
+.tab{
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
 @keyframes animate{
     from{
         width: 0;
@@ -153,7 +158,7 @@ body{
   
     .sobre h3{
     font-size: 2em;
-    padding: 50px 10px 15px 10px;
+    padding: 50px 10px 15px 1em;
     text-align: left;
     }
     
