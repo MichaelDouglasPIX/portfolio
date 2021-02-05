@@ -30,9 +30,9 @@ body{
     height: 87vh;
     padding: 40px 20px 0px 20px;
     text-align: center;
-    background-image:   url(../Imagens/Front.png), 
-                        url(../Imagens/LogoSite.png),
-                        url(../Imagens/Background.png),
+    background-image:   url(../Imagens/Front.webp), 
+                        url(../Imagens/LogoSite.webp),
+                        url(../Imagens/Background.webp),
                         linear-gradient(90deg ,#270202 1%, #1a022f 74%);
     background-size: 110% 360px, 235px 390px, 610px 400px, cover;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ body{
 
 .projects-cards .monkey_business:after{
     content:'';
-    background-image: url(../Imagens/MonkeyBusiness.png);
+    background-image: url(../Imagens/MonkeyBusiness.webp);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,7 +222,7 @@ body{
 
 .projects-cards .desce_mais_uma:after{
     content:'';
-    background-image: url(../Imagens/descemaisuma.png);
+    background-image: url(../Imagens/descemaisuma.webp);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -238,7 +238,7 @@ body{
 
 .projects-cards .vizinha_viral:after{
     content:'';
-    background-image: url(../Imagens/vizinhaviral.png);
+    background-image: url(../Imagens/vizinhaviral.webp);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,7 +254,7 @@ body{
 
 .projects-cards .downtown_run_down:after{
     content:'';
-    background-image: url(../Imagens/DowntownRun-Down.png);
+    background-image: url(../Imagens/DowntownRun-Down.webp);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -270,7 +270,7 @@ body{
 
 .projects-cards .relivium:after{
     content:'';
-    background-image: url(../Imagens/Relivium.png);
+    background-image: url(../Imagens/Relivium.webp);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -371,8 +371,8 @@ body{
     justify-content: center;
     align-items:flex-start;
     background-image:   linear-gradient(rgba(255,255,255,0) 70% , black),
-                        url(../Imagens/LogoSite.png),
-                        url(../Imagens/Background.png),
+                        url(../imagens/LogoSite.webp),
+                        url(../Imagens/Background.webp),
                         linear-gradient(to right, #000000 , #270202 40% , #1a022f);
     height: 92vh;
     background-size: cover, 265px 450px, 850px 600px, cover;
