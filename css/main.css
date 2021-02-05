@@ -48,9 +48,31 @@ body{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 800;
     padding: 20px 10px;
     border-radius: 10px;
+}
+
+.badge_title_pc{
+    color: #fff;
+    font-size: 0em;
+    font-weight: 800;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.badge_title_pc span{
+    color: #8ec45f;
+}
+
+.badge_subtitle_pc{
+    color: #fff;
+    font-size: 0em;
+    font-weight: 800;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
 }
 
 .badge_links{
@@ -327,13 +349,32 @@ body{
     
     .badge_title{
     background-color: rgba(255,255,255,0);
+    font-size: 0em;
+    margin: 0 0 0 0; 
+    padding: 0px 0px;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+    }
+    
+    .badge_title_pc{
     font-size: 3em;
-    margin: 20px 0 0 20px; 
-    padding: 20px 20px;
+    margin: 0 0 0 50px; 
+    padding: 0px 0px;
+    overflow: none;
+    opacity: 1;
+    }
+    
+    .badge_subtitle_pc{
+    font-size: 1.2em;
+    margin: 0 0 0 50px; 
+    padding: 0px 0px;
+    overflow: hidden;
+    opacity: 1;
     }
 
     .badge_links{
-        padding: 20px 0px 20px 80px;
+        padding: 20px 0px 20px 15px;
         grid-auto-rows: 4em;
         grid-auto-columns: 7.5em;
     }
@@ -397,5 +438,21 @@ body{
     .badge{
     background-size: cover, 450px 750px, 1700px 1050px, cover; 
     background-position: center, 1450px bottom, 850px bottom, center;
+    }
+    
+     .badge_title_pc{
+    font-size: 4em;
+    margin: 0 0 0 50px; 
+    padding: 0px 0px;
+    overflow: none;
+    opacity: 1;
+    }
+    
+    .badge_subtitle_pc{
+    font-size: 1.7em;
+    margin: 0 0 0 50px; 
+    padding: 0px 0px;
+    overflow: hidden;
+    opacity: 1;
     }
 }
