@@ -31,7 +31,7 @@ body{
     padding: 40px 20px 0px 20px;
     text-align: center;
     background-image:   url(../Imagens/Front.webp), 
-                        url(../Imagens/LogoSite.webp),
+                        url(../Imagens/michaeldouglas.webp),
                         url(../Imagens/Background.webp),
                         linear-gradient(90deg ,#270202 1%, #1a022f 74%);
     background-size: 110% 360px, 235px 390px, 610px 400px, cover;
@@ -371,7 +371,7 @@ body{
     justify-content: center;
     align-items:flex-start;
     background-image:   linear-gradient(rgba(255,255,255,0) 70% , black),
-                        url(../imagens/LogoSite.webp),
+                        url(../imagens/michaeldouglas.webp),
                         url(../Imagens/Background.webp),
                         linear-gradient(to right, #000000 , #270202 40% , #1a022f);
     height: 92vh;
