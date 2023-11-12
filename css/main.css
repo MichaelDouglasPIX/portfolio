@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin 0;
+    margin: 0;
     font-family: 'Open Sans', sans-serif; 
     line-height: 1.4;
     padding: 0;
@@ -127,7 +127,7 @@ body{
     box-sizing: 50px;   
 }
 
-.badge_links .icon-github{
+.badge_links .icon-github, .badge_links .icon-x{
         color: black;
 }
 
@@ -164,7 +164,7 @@ body{
     margin-top: 2.5em; 
 }
 
-.projects-cards:nth-child(5){
+.projects-cards:nth-child(6){
     margin-bottom: 2.5em;
 }
 
@@ -189,19 +189,39 @@ body{
 
 /*------------------------ Thumbs --------------------*/
 .projects-cards:nth-child(1) a:hover{
+    box-shadow: 0 0 1em #1df800, 0 0 1em #1df800;
+}
+
+.projects-cards:nth-child(2) a:hover{
     box-shadow: 0 0 1em #777777, 0 0 1em #777777;
 }
-.projects-cards:nth-child(2) a:hover{
+.projects-cards:nth-child(3) a:hover{
     box-shadow: 0 0 1em #FF0000, 0 0 1em #FF0000;
 }
-.projects-cards:nth-child(3) a:hover{
+.projects-cards:nth-child(4) a:hover{
     box-shadow: 0 0 1em #4B0082, 0 0 1em #4B0082;
 }
-.projects-cards:nth-child(4) a:hover{
+.projects-cards:nth-child(5) a:hover{
     box-shadow: 0 0 1em #FFD700, 0 0 1em #FFD700;
 }
-.projects-cards:nth-child(5) a:hover{
+.projects-cards:nth-child(6) a:hover{
     box-shadow: 0 0 1em #0B0B3B, 0 0 1em #0B0B3B;
+}
+
+.projects-cards .relatos_vera_cruz:after{
+    content:'';
+    background-image: url(../Imagens/RelatosDeVeraCruz.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 1;
+    transition: .4s ease-in-out;
 }
 
 .projects-cards .monkey_business:after{
@@ -284,7 +304,12 @@ body{
     transition: .4s ease-in-out;
 }
 
-.projects-cards .monkey_business:hover:after, .projects-cards .relivium:hover:after, .projects-cards .desce_mais_uma:hover:after, .projects-cards .vizinha_viral:hover:after, .projects-cards .downtown_run_down:hover:after, .projects-cards .relivium:after{
+.projects-cards .relatos_vera_cruz:hover::after, 
+.projects-cards .monkey_business:hover:after, 
+.projects-cards .relivium:hover:after, 
+.projects-cards .desce_mais_uma:hover:after, 
+.projects-cards .vizinha_viral:hover:after, 
+.projects-cards .downtown_run_down:hover:after{
     opacity: 1;
 }
 
@@ -292,7 +317,7 @@ body{
     display: block;
     text-align: center;
     background-color: #270202;
-    padding: 2em 0 3em;
+    padding: 2em 0 2em;
     color: #454251;
     font-size: 14px;
 }
@@ -330,7 +355,7 @@ body{
         grid-gap: 20px;
     }
     
-    .projects-cards:nth-child(5){
+    .projects-cards:nth-child(6){
     margin-bottom: 2.5em;
     }
     
@@ -347,7 +372,12 @@ body{
         filter: grayscale(0);
     }
     
-    .projects-cards .monkey_business:after, .projects-cards .desce_mais_uma:after, .projects-cards .vizinha_viral:after, .projects-cards .downtown_run_down:after, .projects-cards .relivium:after{
+    .projects-cards .relatos_vera_cruz:after, 
+    .projects-cards .monkey_business:after, 
+    .projects-cards .desce_mais_uma:after, 
+    .projects-cards .vizinha_viral:after, 
+    .projects-cards .downtown_run_down:after, 
+    .projects-cards .relivium:after{
     content:'';
     opacity: 0;
     }
@@ -421,7 +451,7 @@ body{
         font-size: 4em;
     }
     
-    .badge_links .icon-github{
+    .badge_links .icon-github, .badge_links .icon-x{
         color: #ffffff;
     }
     
@@ -461,7 +491,7 @@ body{
     max-width: 1800px;
     }
     
-    .projects-cards:nth-child(5){
+    .projects-cards:nth-child(6){
     margin-bottom: 10em;
     }
     

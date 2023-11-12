@@ -148,6 +148,12 @@ input{
     transition: max-height .7s ease;
 }
 
+#copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; 
+    color: #8ec45f;
+}
+
 @media screen and (min-width: 360px){
     .logo-text{
         padding: 0px 16px;

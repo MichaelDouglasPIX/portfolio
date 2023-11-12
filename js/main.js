@@ -10,4 +10,8 @@
         sobreBtn: '.btnSobre',
         widthEnabled: 800
     })
+
+    let date = new Date,
+    currentYar = date.getFullYear();
+    document.getElementById("currentYear").textContent = currentYar;
 })();
