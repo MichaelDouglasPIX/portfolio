@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin 0;
+    margin: 0;
     font-family: 'Open Sans', sans-serif; 
     line-height: 1.4;
     padding: 0;
@@ -30,7 +30,7 @@ body{
     display: block;
     text-align: center;
     background-color: #270202;
-    padding: 2em 0 3em;
+    padding: 2em 0 2em;
     color: #454251;
     font-size: 14px;
 }
@@ -245,4 +245,8 @@ body{
 
 @media screen and (min-width: 2560px){
 
+}
+
+#age {
+    color: black;
 }
